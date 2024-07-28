@@ -1,0 +1,65 @@
+section.hero {
+  margin-top: 3rem;
+}
+
+section.hero .parent-avatar.flex {
+  align-items: end;
+  gap: 0.7rem;
+  min-height: 88px;
+}
+
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+section.hero .avatar {
+  border-radius: 50%;
+  width: 88px;
+  border: 1px solid #eee2d2;
+  padding: 3px;
+  box-shadow: 2px 2px 30px rgba(128, 128, 128, 0.443);
+}
+
+section.hero .icon-verified {
+  color: var(--blue);
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+section.hero h1.title {
+  font-size: 2.85rem;
+  line-height: 3.3rem;
+  margin: 20px 0;
+  color: var(--title);
+}
+
+section.hero p.sub-title {
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 32px;
+  color: var(--subtitle);
+}
+
+section.hero .all-icons {
+  font-size: 1.4rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+section.hero .all-icons .icon:hover {
+  font-size: 1.5rem;
+  transition: 0.3s;
+  color: var(--icon-hover);
+  cursor: pointer;
+}
+
+.animation {
+  width: 120rem;
+  translate: 100px 55px;
+}
+
+@media (max-width: 1200px) {
+    .animation {
+        display: none;
+    }
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 0.8px;
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary: #000;
+  --scondary: rgb(24, 24, 27);
+  --border: rgba(63, 63, 70, 0.4);
+
+  --title: rgb(244, 244, 245);
+  --subtitle: rgb(161, 161, 170);
+
+  --bgHeader: rgb(39, 39, 42);
+  --blue: rgb(93, 188, 252);
+
+  --icon-hover: #d4d4d8;
+}
+
+.light {
+  --primary: #fff; /* لون أبيض أو قريب منه */
+  --scondary: rgb(240, 240, 240); /* لون رمادي فاتح */
+  --border: rgba(200, 200, 200, 0.4); /* لون حدود فاتح */
+
+  --title: rgb(39, 39, 42); /* لون داكن قليلاً لعناوين */
+  --subtitle: rgb(100, 100, 100); /* لون داكن قليلاً للنصوص الفرعية */
+
+  --bgHeader: rgb(230, 230, 230); /* لون خلفية فاتح */
+  --blue: rgb(
+    93,
+    188,
+    252
+  ); /* يمكن الاحتفاظ بهذا اللون إذا كان مناسبًا للوضع الفاتح */
+
+  --icon-hover: #555; /* لون داكن قليلاً عند تمرير الفأرة على الأيقونات */
+}
+
+.dark {
+  --primary: #000;
+  --scondary: rgb(24, 24, 27);
+  --border: rgba(63, 63, 70, 0.4);
+
+  --title: rgb(244, 244, 245);
+  --subtitle: rgb(161, 161, 170);
+
+  --bgHeader: rgb(39, 39, 42);
+  --blue: rgb(93, 188, 252);
+
+  --icon-hover: #d4d4d8;
+}
+
+body {
+  background-color: var(--primary);
+  color: white;
+}
+
+.container {
+  border: 2px solid var(--border);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--scondary);
+  padding: 0 4.8rem;
+}
+
+.divider {
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+  width: calc(100% + 4.8rem + 4.8rem);
+  margin-left: -4.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  transition: 0.2s;
+  all: unset;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  border: 2px solid red;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.6;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.scroll2Top {
+  background-color: rgba(25, 118, 210, 0.85);
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 1s;
+}
+.scroll2Top:active {
+  scale: 0.9;
+}
+.scroll2Top:hover {
+  background-color: rgb(25, 118, 210);
+}
+
+.icon-keyboard_arrow_up {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 100px) {
+  .container {
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+  .divider {
+    width: calc(100% + 1.7rem + 1.7rem);
+    margin-left: -1.7rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+  .scroll2Top {
+    width: 2.3rem;
+    height: 2.3rem;
+    opacity: 0.5;
+  }
+}
