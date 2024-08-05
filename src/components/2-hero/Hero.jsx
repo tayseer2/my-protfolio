@@ -14,7 +14,7 @@ export default function Hero() {
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1)" }}
             transition={{ damping: 7, type: "spring", stiffness: 100 }}
-            src="/src/images/me.png"
+            src="/images/main/me.png"
             className="avatar"
             alt="avatar"
           />
