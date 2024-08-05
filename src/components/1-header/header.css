@@ -28,7 +28,7 @@ header ul li a:hover {
     color: var(--blue);
     opacity: 1;
     font-size: 0.9rem;
-
+    cursor: pointer;
 }
 
 header button {
