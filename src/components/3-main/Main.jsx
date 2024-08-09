@@ -11,7 +11,8 @@ export default function Main() {
     setcurrentActive(buttonCategory);
 
     const filteredProjects = myProjects.filter((item) => {
-      return item.cetegory === buttonCategory;
+      // return item.cetegory === buttonCategory;
+      return item.cetegory.includes(buttonCategory);
     });
     setAllProjects(filteredProjects);
   };
@@ -46,11 +47,19 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
-            filterProjects();
+            filterProjects("React");
           }}
-          className={currentActive === "react" ? "active" : null}
+          className={currentActive === "React" ? "active" : null}
         >
           React.js
+        </button>
+        <button
+          onClick={() => {
+            filterProjects("React & Tailwindcss");
+          }}
+          className={currentActive === "React & Tailwindcss" ? "active" : null}
+        >
+          React & Tailwindcss
         </button>
       </section>
 
