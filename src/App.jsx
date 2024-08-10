@@ -60,7 +60,7 @@ function App() {
     setTimeout(() => {
       setData({ message: "Data loaded!" });
       setLoading(false);
-    }, 3000); 
+    }, 2000); 
   }, []);
 
   useEffect(() => {
