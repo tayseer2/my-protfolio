@@ -61,7 +61,7 @@ function App() {
       setData({ message: "Data loaded!" });
       setLoading(false);
     }, 2000); 
-  }, []);
+  }, [data]);
 
   useEffect(() => {
     const handleScroll = () => {
