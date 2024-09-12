@@ -79,4 +79,12 @@ export const myProjects = [
     giturl: "https://github.com/tayseer2/prayer-times",
     demo: "https://prayer-times-v0.netlify.app/",
   },
+  {
+    id: 11,
+    title: "E-Commerce",
+    cetegory: "React & Tailwindcss",
+    img: "/images/main/x.png",
+    giturl: "https://github.com/tayseer2/Shope-v2",
+    demo: "https://shope-v2.netlify.app/",
+  },
 ];
