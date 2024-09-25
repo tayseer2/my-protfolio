@@ -87,4 +87,12 @@ export const myProjects = [
     giturl: "https://github.com/tayseer2/Shope-v2",
     demo: "https://shope-v2.netlify.app/",
   },
+  {
+    id: 12,
+    title: "ToDo List!",
+    cetegory: "React & Tailwindcss",
+    img: "/images/main/c.png",
+    giturl: "https://github.com/tayseer2/ToDo-List",
+    demo: "https://todo-list-020.netlify.app/",
+  },
 ];

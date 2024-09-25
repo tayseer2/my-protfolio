@@ -49,6 +49,7 @@ import Main from "./components/3-main/Main";
 import Contact from "./components/4-contact/Contact";
 import Footer from "./components/5-footer/Footer";
 import "./components/Spinner/Spinner";
+import Spinner from "./components/Spinner/Spinner";
 
 
 function App() {
@@ -80,9 +81,7 @@ function App() {
 
   if (loading) {
     return (
-      <div className="spinner-container">
-        <div className="spinner"></div>
-      </div>
+      <Spinner />
     );
   }
 
