@@ -95,4 +95,12 @@ export const myProjects = [
     giturl: "https://github.com/tayseer2/ToDo-List",
     demo: "https://todo-list-020.netlify.app/",
   },
+  {
+    id: 13,
+    title: "My Design",
+    cetegory: "React & Tailwindcss",
+    img: "/images/main/v.png",
+    giturl: "https://github.com/tayseer2/my-design",
+    demo: "https://my-design-v2.netlify.app/",
+  },
 ];
