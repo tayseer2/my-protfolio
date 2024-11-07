@@ -1,0 +1,35 @@
+
+/* cv-btn */
+.button-cv {
+  margin-top: 30px;
+  padding: 12px 19px;
+  border: none;
+  cursor: pointer;
+  color: var(--blue);
+  background-color: var(title);
+  border: 1px solid var(--blue);
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.5s;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 13px;
+  box-shadow: rgba(93, 188, 252, 0.350) 0px 2px 8px 2px;
+}
+
+.light .button-cv {
+    color: var(--title);
+    box-shadow: rgba(63, 63, 70, 0.4) 0px 2px 8px 2px;
+    border: 1px solid var(--tilte);
+}
+
+.button-cv .button-cv:hover {
+  background-color: rgb(164, 206, 253);
+  box-shadow: var(--blue) 0px 4px 6px -1px,
+    var(--blue) 0px 2px 4px -1px;
+}
+
+.saveicon {
+  width: 17px;
+}

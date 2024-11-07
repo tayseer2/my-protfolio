@@ -40,6 +40,11 @@ header button.menu {
     display: none;
 }
 
+
+.active-btn {
+    color: var(--blue);
+}
+
 /* IconButton */
 
 header .mode, header button.icon-menu {
@@ -80,7 +85,7 @@ header .fixed {
 
 @keyframes move {
     0% {scale: 0;}
-    50% {scale: 1.2}
+    50% {scale: 1.1}
     100% {scale: 1;}
 
 }

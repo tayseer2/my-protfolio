@@ -14,7 +14,7 @@ export default function Hero() {
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1)" }}
             transition={{ damping: 7, type: "spring", stiffness: 100 }}
-            src="/images/main/me.png"
+            src="/images/main/me.jpg"
             className="avatar"
             alt="avatar"
           />
@@ -27,7 +27,7 @@ export default function Hero() {
         </h1>
         <p className="sub-title">
           I’m Tayseer, Aspiring Web Developer with a solid foundation in HTML,
-          CSS, JavaScript, React.js, and Bootstrap. Passionate about creating
+          CSS, JavaScript, React.js, and Tailwindcss. Passionate about creating
           responsive, user-friendly websites and dedicated to continuous
           learning and improvement. Strong problem-solving skills and a keen eye
           for detail, with a commitment to delivering high-quality web
