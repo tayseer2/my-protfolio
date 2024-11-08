@@ -54,7 +54,7 @@ export default function About() {
         </section>
 
         <div className="download-cv">
-          <a href="/public/TEYSİR-ELRAHHAL-CV.pdf" download>
+          <a href="./TEYSİR-ELRAHHAL-CV.pdf" download>
             <button className="button-cv">
               <svg
                 className="saveicon"

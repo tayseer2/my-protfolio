@@ -153,7 +153,7 @@ export default function Header() {
               >
                 Contact
               </a>
-            </li>
+            </li> 
           </ul>
         </div>
       )}
