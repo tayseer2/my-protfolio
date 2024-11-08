@@ -110,19 +110,49 @@ export default function Header() {
               />
             </li>
             <li>
-              <a href="">About</a>
+              <Link
+                to="/"
+                className={activeButton === "/" ? "active-btn" : ""}
+                onClick={() => handleButtonClick("/")}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a href="">Articles</a>
+              <Link
+                to="/about"
+                className={activeButton === "/about" ? "active-btn" : ""}
+                onClick={() => handleButtonClick("/about")}
+              >
+                About Me
+              </Link>
             </li>
             <li>
-              <a href="">Projects</a>
+              <Link
+                to="/projects"
+                className={activeButton === "projects" ? "active-btn" : ""}
+                onClick={() => handleButtonClick("projects")}
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="">Speaking</a>
+              <Link
+                to="/skills"
+                className={activeButton === "skills" ? "active-btn" : ""}
+                onClick={() => handleButtonClick("skills")}
+              >
+                Skills
+              </Link>
             </li>
             <li>
-              <a href="">Uses</a>
+              <a
+                href="#contact"
+                className={activeButton === "contact" ? "active-btn" : ""}
+                onClick={() => handleButtonClick("contact")}
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>

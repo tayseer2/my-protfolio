@@ -14,7 +14,9 @@ export default function Projects() {
           I’ve worked on several projects over the years, but these are the ones
           I&apos;m most proud of.
         </p>
+
         <div className="box flex">
+
           <div className="firts ">
             <div className="image">
               <img src="/images/main/junior-logo.jpg" alt="" />
@@ -24,12 +26,10 @@ export default function Projects() {
               Interactive chatbot built with React, designed for seamless user
               communication and smooth performance.
             </p>
-            <a href="https://junior-v2.netlify.app/" className="links flex">
-              <a
-                href="https://junior-v2.netlify.app/"
-                target="_blank"
+            <a href="https://junior-v2.netlify.app/" target="_blank" className="links flex">
+              <p
                 className="icon-link"
-              ></a>
+              ></p>
               <p className="link-name">Junior.ai</p>
             </a>
           </div>
@@ -43,12 +43,10 @@ export default function Projects() {
               Responsive e-commerce website, built with React, optimized for
               speed and a seamless user experience.
             </p>
-            <a href="https://shope-v2.netlify.app/" className="links flex">
-              <a
-                href="https://shope-v2.netlify.app/"
-                target="_blank"
+            <a href="https://shope-v2.netlify.app/" target="_blank" className="links flex">
+              <p
                 className="icon-link"
-              ></a>
+              ></p>
               <p className="link-name">shope-v2.netlify.app</p>
             </a>
           </div>
@@ -62,15 +60,14 @@ export default function Projects() {
               Creative portfolio website, designed with React and Tailwind CSS,
               showcasing design projects and services.
             </p>
-            <a href="https://my-design-v2.netlify.app/" className="links flex">
-              <a
-                href="https://my-design-v2.netlify.app/"
-                target="_blank"
+            <a href="https://my-design-v2.netlify.app/" target="_blank" className="links flex">
+              <p
                 className="icon-link"
-              ></a>
+              ></p>
               <p className="link-name">my-design-v2.netlify.app</p>
             </a>
           </div>
+
         </div>
       </section>
       <div className="divider"></div>

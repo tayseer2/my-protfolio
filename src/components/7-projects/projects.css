@@ -1,5 +1,6 @@
 section.projects {
   margin-top: 65px;
+  height: fit-content;
 }
 
 section.projects .title {
