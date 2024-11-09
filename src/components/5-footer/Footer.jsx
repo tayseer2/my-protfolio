@@ -5,18 +5,20 @@ export default function Footer() {
   return (
     <footer className="flex">
       <ul className="flex">
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Projects</a>
-        </li>
-        <li>
-          <a href="">Speaking</a>
-        </li>
-        <li>
-          <a href="">Uses</a>
-        </li>
+        <div className="all-icons flex">
+          <div className="icon icon-x"></div>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/tayseer_alrahhal?igsh=MWg4NWU3dmM2bW1mOQ=="
+            className="icon icon-instagram"
+          ></a>
+          <a
+            target="_blank"
+            href="https://github.com/tayseer2"
+            className="icon icon-github"
+          ></a>
+          <div className="icon icon-linkedin"></div>
+        </div>
       </ul>
       <p className="copyRight">© {currentYear} Tayseer. All rights reserved.</p>
     </footer>

@@ -1,0 +1,166 @@
+.skills-section {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.skill-word {
+  font-size: 48px;
+  color: var(--title);
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+
+.icons-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: rotate-around 10s infinite linear;
+  z-index: 1;
+}
+
+.skills-icon {
+  position: absolute;
+  font-size: 32px;
+  animation: float-icon 3s infinite;
+  z-index: 2;
+}
+
+.skills-icon:nth-child(1) {
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skills-icon:nth-child(2) {
+  top: 15%;
+  left: 57%;
+}
+
+.skills-icon:nth-child(3) {
+  top: 25%;
+  left: 63%;
+  transform: translateY(-50%);
+}
+
+.skills-icon:nth-child(4) {
+  bottom: 15%;
+  left: 57%;
+}
+
+.skills-icon:nth-child(5) {
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skills-icon:nth-child(6) {
+  bottom: 15%;
+  left: 43%;
+}
+
+.skills-icon:nth-child(7) {
+  top: 25%;
+  left: 37%;
+  transform: translateY(-50%);
+}
+
+.skills-icon:nth-child(8) {
+  top: 45%;
+  left: 30%;
+  transform: translateY(-50%);
+}
+
+@keyframes float-icon {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(60deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes rotate-around {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .icons-container {
+    width: 70%;
+    height: 70%;
+  }
+
+  .skills-section .skills-icon img {
+    width: 24px;
+  }
+
+  .skill-word {
+    font-size: 40px;
+  }
+
+  .skills-icon:nth-child(1) {
+    top: 68%;
+    left: 76%;
+    transform: translateX(-50%);
+  }
+
+  .skills-icon:nth-child(2) {
+    top: 30%;
+    left: 75%;
+  }
+
+  .skills-icon:nth-child(3) {
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+  }
+
+  .skills-icon:nth-child(4) {
+    bottom: 24%;
+    left: 9%;
+  }
+
+  .skills-icon:nth-child(5) {
+    bottom: 45%;
+    left: -2%;
+    transform: translateX(-50%);
+  }
+
+  .skills-icon:nth-child(6) {
+    bottom: 15%;
+    left: 41%;
+  }
+
+  .skills-icon:nth-child(7) {
+    top: 18%;
+    left: 36%;
+    transform: translateY(-50%);
+  }
+
+  .skills-icon:nth-child(8) {
+    top: 31%;
+    left: 3%;
+    transform: translateY(-50%);
+  }
+
+  /* تقليل سرعة التدوير */
+  .icons-container {
+    animation: rotate-around 6s infinite linear; /* جعل التدوير أسرع */
+  }
+}
