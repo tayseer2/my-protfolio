@@ -34,21 +34,17 @@ html {
 }
 
 .light {
-  --primary: #fff; 
-  --scondary: rgb(240, 240, 240); 
+  --primary: #fff;
+  --scondary: rgb(240, 240, 240);
   --border: rgba(200, 200, 200, 0.4);
 
   --title: rgb(39, 39, 42);
   --subtitle: rgb(100, 100, 100);
 
-  --bgHeader: rgb(230, 230, 230); 
-  --blue: rgb(
-    93,
-    188,
-    252
-  ); 
+  --bgHeader: rgb(230, 230, 230);
+  --blue: rgb(93, 188, 252);
 
-  --icon-hover: #555; 
+  --icon-hover: #555;
 }
 
 .dark {
@@ -69,6 +65,25 @@ body {
   background-color: var(--primary);
   color: white;
 }
+
+/* تصميم شريط التمرير */
+::-webkit-scrollbar {
+  width: 14px; /* عرض شريط التمرير */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bgHeader); 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue); 
+}
+
+.light::-webkit-scrollbar-thumb {
+  background-color: var(--title) ;
+}
+
+
 
 .container {
   border: 2px solid var(--border);

@@ -32,7 +32,7 @@ export default function Skills() {
             <img width={"40px"} src="/skills/structure.png" alt="" />
           </div>
           <div className="skills-icon">
-            <img width={"40px"} src="/skills/social.png" alt="" />
+            <img width={"40px"} src="/skills/git.png" alt="" />
           </div>
         </div>
       </div>

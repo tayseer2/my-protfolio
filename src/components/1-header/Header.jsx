@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./header.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
-  const [activeButton, setActiveButton] = useState("/");
+  const location = useLocation();
   const [showModel, setshowModel] = useState(false);
 
   const [theme, settheme] = useState(
@@ -20,10 +20,6 @@ export default function Header() {
     }
   }, [theme]);
 
-  const handleButtonClick = (path) => {
-    setActiveButton(path);
-  };
-
   return (
     <header className="flex">
       <button
@@ -37,8 +33,7 @@ export default function Header() {
           <li>
             <Link
               to="/"
-              className={activeButton === "/" ? "active-btn" : ""}
-              onClick={() => handleButtonClick("/")}
+              className={location.pathname === "/" ? "active-btn" : ""}
             >
               Home
             </Link>
@@ -46,8 +41,7 @@ export default function Header() {
           <li>
             <Link
               to="/about"
-              className={activeButton === "/about" ? "active-btn" : ""}
-              onClick={() => handleButtonClick("/about")}
+              className={location.pathname === "/about" ? "active-btn" : ""}
             >
               About Me
             </Link>
@@ -55,8 +49,7 @@ export default function Header() {
           <li>
             <Link
               to="/projects"
-              className={activeButton === "projects" ? "active-btn" : ""}
-              onClick={() => handleButtonClick("projects")}
+              className={location.pathname === "/projects" ? "active-btn" : ""}
             >
               Projects
             </Link>
@@ -64,20 +57,18 @@ export default function Header() {
           <li>
             <Link
               to="/skills"
-              className={activeButton === "skills" ? "active-btn" : ""}
-              onClick={() => handleButtonClick("skills")}
+              className={location.pathname === "/skills" ? "active-btn" : ""}
             >
               Skills
             </Link>
           </li>
           <li>
-            <a
-              href="#contact"
-              className={activeButton === "contact" ? "active-btn" : ""}
-              onClick={() => handleButtonClick("contact")}
+            <Link
+              to="/contact"
+              className={location.pathname === "/contact" ? "active-btn" : ""}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -112,8 +103,7 @@ export default function Header() {
             <li>
               <Link
                 to="/"
-                className={activeButton === "/" ? "active-btn" : ""}
-                onClick={() => handleButtonClick("/")}
+                className={location.pathname === "/" ? "active-btn" : ""}
               >
                 Home
               </Link>
@@ -121,8 +111,7 @@ export default function Header() {
             <li>
               <Link
                 to="/about"
-                className={activeButton === "/about" ? "active-btn" : ""}
-                onClick={() => handleButtonClick("/about")}
+                className={location.pathname === "/about" ? "active-btn" : ""}
               >
                 About Me
               </Link>
@@ -130,8 +119,9 @@ export default function Header() {
             <li>
               <Link
                 to="/projects"
-                className={activeButton === "projects" ? "active-btn" : ""}
-                onClick={() => handleButtonClick("projects")}
+                className={
+                  location.pathname === "/projects" ? "active-btn" : ""
+                }
               >
                 Projects
               </Link>
@@ -139,21 +129,19 @@ export default function Header() {
             <li>
               <Link
                 to="/skills"
-                className={activeButton === "skills" ? "active-btn" : ""}
-                onClick={() => handleButtonClick("skills")}
+                className={location.pathname === "/skills" ? "active-btn" : ""}
               >
                 Skills
               </Link>
             </li>
             <li>
-              <a
-                href="#contact"
-                className={activeButton === "contact" ? "active-btn" : ""}
-                onClick={() => handleButtonClick("contact")}
+              <Link
+                to="/contact"
+                className={location.pathname === "/contact" ? "active-btn" : ""}
               >
                 Contact
-              </a>
-            </li> 
+              </Link>
+            </li>
           </ul>
         </div>
       )}

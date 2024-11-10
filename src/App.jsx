@@ -1,3 +1,4 @@
+import ContactV2 from "./components/9-contact-v2/ContactV2";
 import About from "./components/6-about/About";
 import Projects from "./components/7-projects/Projects";
 import Skills from "./components/8-skills/Skills";
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<ContactV2 />} />
       </Routes>
     </div>
   );
