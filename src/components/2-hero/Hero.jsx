@@ -37,16 +37,20 @@ export default function Hero() {
         <div className="all-icons flex">
           <div className="icon icon-x"></div>
           <a
-          target="_blank"
+            target="_blank"
             href="https://www.instagram.com/tayseer_alrahhal?igsh=MWg4NWU3dmM2bW1mOQ=="
             className="icon icon-instagram"
           ></a>
           <a
-          target="_blank"
+            target="_blank"
             href="https://github.com/tayseer2"
             className="icon icon-github"
           ></a>
-          <div className="icon icon-linkedin"></div>
+          <a
+            href="https://www.linkedin.com/in/tayseer-alrahhal/"
+            target="_blank"
+            className="icon icon-linkedin"
+          ></a>
         </div>
 
         <div className="download-cv">
@@ -70,7 +74,6 @@ export default function Hero() {
             </button>
           </a>
         </div>
-        
       </div>
 
       <div className="right-section animation">

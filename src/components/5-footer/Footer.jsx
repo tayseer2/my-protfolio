@@ -17,7 +17,11 @@ export default function Footer() {
             href="https://github.com/tayseer2"
             className="icon icon-github"
           ></a>
-          <div className="icon icon-linkedin"></div>
+          <a
+            href="https://www.linkedin.com/in/tayseer-alrahhal/"
+            target="_blank"
+            className="icon icon-linkedin"
+          ></a>
         </div>
       </ul>
       <p className="copyRight">© {currentYear} Tayseer. All rights reserved.</p>
