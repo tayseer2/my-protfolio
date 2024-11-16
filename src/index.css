@@ -66,9 +66,9 @@ body {
   color: white;
 }
 
-/* تصميم شريط التمرير */
+
 ::-webkit-scrollbar {
-  width: 14px; /* عرض شريط التمرير */
+  width: 14px; 
 }
 
 ::-webkit-scrollbar-track {
