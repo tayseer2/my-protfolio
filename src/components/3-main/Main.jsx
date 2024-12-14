@@ -17,6 +17,8 @@ export default function Main() {
     setAllProjects(filteredProjects);
   };
 
+
+
   return (
     <main className="flex">
       <section className="left-section flex">
